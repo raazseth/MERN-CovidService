@@ -1,0 +1,20 @@
+.PostDonorForm {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* align-items: center; */
+  padding: 2em;
+}
+
+.bloodOpt {
+  margin-top: 0.5em;
+  float: left;
+  margin-left: .7em;
+}
+.mainDonorForm {
+  display: grid;
+  place-items: center;
+}

@@ -1,0 +1,137 @@
+.mainHome {
+  display: flex;
+  flex-direction: column;
+}
+.homeUpperHead {
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.homeHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  height: 40em;
+  margin-top: 1em;
+}
+.homeHead h1 {
+  font-size: 50px;
+}
+/* #282A3 */
+.homeSectionTwo {
+  background-color: #f6f6f6;
+  height: 20em;
+  display: grid;
+  place-items: center;
+  padding: 4em 0;
+}
+.homeSectionTwoCntnt {
+  margin-left: auto;
+  margin-right: auto;
+}
+.homeSectionTwoCntnt h1 {
+  text-align: center;
+  font-size: 40px;
+}
+.homeSectionTwoCntntMain {
+  display: flex;
+  flex-direction: row;
+  margin: 2em 0;
+}
+.homeSectionTwoC1 {
+  margin: 0 2em;
+  text-align: center;
+}
+.homeReg {
+  padding: 0.8em 2em;
+  border-radius: 24px;
+  border: 1px solid gainsboro;
+  font-family: Quicksand, sans-serif;
+  cursor: pointer;
+  margin-top: 2em;
+}
+.homeReg:hover {
+  background-color: ghostwhite;
+  transition: 0.5s ease-in-out;
+}
+.homeSectionTwoC2 {
+  margin: 0 2em;
+  text-align: center;
+}
+.mainHomeImg {
+  width: auto;
+  height: 40em;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-right: auto;
+  margin-top: -3em;
+}
+.donorTxt {
+  text-align: center;
+  font-size: 45px;
+  color: #333;
+  margin: 0.5em 0;
+}
+.donorList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.innerHomeHead {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+}
+.homeImgSection{
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+justify-content: center;
+display: flex;
+padding: 5em;
+color: azure;
+margin-bottom: -2.6em;
+margin-top: 2.6em;
+}
+.homeImgSection h1{
+  font-size: 45px;
+}
+.homeImgSection h2{
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  .homeHead h1 {
+    text-align: center;
+  }
+  .innerHomeHead {
+    text-align: center;
+    width: 80%;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+  .mainHomeImg {
+    width: 100%;
+  }
+  .homeSectionTwo {
+    height: auto;
+  }
+  .homeSectionTwoCntntMain {
+    display: flex;
+    flex-direction: column;
+  }
+  .homeSectionTwoC2 {
+    margin-top: 1em;
+  }
+  .homeImgSection{
+    padding: 3.5em 1em;
+  }
+  .homeImgSection h1{
+    font-size: 34px;
+    text-align: center;
+  }
+  .homeImgSection h2{
+    text-align: center;
+    margin-top: 1em;
+  }
+}
