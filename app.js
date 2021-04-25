@@ -5,7 +5,7 @@ const cookieParser = require("cookie-parser");
 const port = process.env.PORT || 5000;
 const app = express();
 const path = require("path");
-require("dotenv").config();
+// require("dotenv").config();
 const { ATLAS_URI } = require("./Config/keys");
 
 app.use(cors());
