@@ -2,6 +2,7 @@ const User = require("../Models/userModel");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const { JWT_SECRET } = require("../Config/keys");
+
 exports.signup = (req, res) => {
   User.findOne({ email: req.body.email }).exec(async (error, user) => {
     if (user)
