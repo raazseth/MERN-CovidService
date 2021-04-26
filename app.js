@@ -15,7 +15,7 @@ app.use(express.json());
 //   app.get("*", (req, res) => {
 //     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
 //   });
- 
+
 // }
 // const uri = process.env.ATLAS_URI;
 const uri = ATLAS_URI;
@@ -39,8 +39,10 @@ app.use("/api", authRoutes);
 app.use("/api", bloodRoutes);
 app.use("/api", donorRoutes);
 
+app.use(express.static("client/build"));
+
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname + "/client/build/index.html"));
+  res.sendFile(path.join(__dirname ,"client", "build", "index.html"));
 });
 
 app.listen(port, () => {
